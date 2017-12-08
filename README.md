@@ -411,6 +411,7 @@ This project is licensed under the MIT License.
 * https://facebook.github.io/react-native/docs/text.html#style
 * https://medium.com/@knoland/typography-in-react-native-f09c43b5b435
 * https://developer.apple.com/videos/play/wwdc2015/804/
+* https://developer.apple.com/videos/play/wwdc2016/801/
 * https://medium.com/react-native-training/list-of-available-react-native-fonts-ed78b48bd45e
 * https://developer.apple.com/documentation/uikit/uifontdescriptor/font_weights
 * https://v1.designcode.io/iosdesign-guidelines
