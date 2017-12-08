@@ -418,3 +418,4 @@ This project is licensed under the MIT License.
 * https://www.raizlabs.com/dev/2015/08/advanced-ios-typography/
 * https://medium.com/@sauvik_dolui/handling-fonts-in-ios-development-a-simpler-way-32d360cdc1b6
 * https://readymag.com/arzamas/132908/6/
+* https://github.com/facebook/react-native/pull/14609
