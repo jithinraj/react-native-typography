@@ -10,6 +10,7 @@ import MaterialTallScreen from "./screens/type/MaterialTallScreen";
 import MaterialDenseScreen from "./screens/type/MaterialDenseScreen";
 import HumanScreen from "./screens/type/HumanScreen";
 import HumanDenseScreen from "./screens/type/HumanDenseScreen";
+import HumanTallScreen from "./screens/type/HumanTallScreen";
 import iOSUIKitScreen from "./screens/type/iOSUIKitScreen";
 import IntegrationsScreen from "./screens/type/IntegrationsScreen";
 import SFWeightsScreen from "./screens/type/SFWeightsScreen";
@@ -67,6 +68,20 @@ const guidelinesStackNavigator = (screen, headerTitle) =>
 
 const Root = DrawerNavigator(
   {
+    human: {
+      screen: guidelinesStackNavigator(HumanScreen, "Human Interface"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Human Interface",
+        drawerIcon: drawerButton("logo-apple", "logo-apple")
+      })
+    },
+    humanTall: {
+      screen: guidelinesStackNavigator(HumanTallScreen, "Human Interface Tall"),
+      navigationOptions: ({ navigation }) => ({
+        drawerLabel: "Human Interface Tall",
+        drawerIcon: drawerButton("logo-apple", "logo-apple")
+      })
+    },
     humanDense: {
       screen: guidelinesStackNavigator(
         HumanDenseScreen,
@@ -74,13 +89,6 @@ const Root = DrawerNavigator(
       ),
       navigationOptions: ({ navigation }) => ({
         drawerLabel: "Human Interface Dense",
-        drawerIcon: drawerButton("logo-apple", "logo-apple")
-      })
-    },
-    human: {
-      screen: guidelinesStackNavigator(HumanScreen, "Human Interface"),
-      navigationOptions: ({ navigation }) => ({
-        drawerLabel: "Human Interface",
         drawerIcon: drawerButton("logo-apple", "logo-apple")
       })
     },
