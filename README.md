@@ -310,6 +310,80 @@ platforms:
 <img alt="React Native Typography Material Showcase on Android" src="images/showcase-material-android.png" width="49.7%"/>
 </p>
 
+## Dense and tall scripts
+
+### Collections
+
+We provide the necessary adjustments for the predefined collections for both
+dense and tall scripts. They have the exact same properties as the other
+collections.
+
+You can check the language categories reference in the
+[Material Design page](https://material.io/guidelines/style/typography.html#typography-language-categories-reference).
+
+```JSX
+import { materialDense } from 'react-native-typography'
+
+<Text style={materialDense.display4}>你好排版！</Text>
+```
+
+<p align="center">
+<img alt="Material Design Collection" src="images/hello-world-chinese.png" width="190" height="70"/>
+</p>
+
+#### Material Design
+
+The equivalent collections are `materialDense` and `materialTall`.
+
+The adjustments made are based on the
+[Material Design guidelines](https://material.io/guidelines/style/typography.html)
+for dense and tall scripts.
+
+<img alt="Material Design Dense" src="images/material-dense.png" width="750" height="734"/>
+<img alt="Material Design Tall" src="images/material-tall.png" width="750" height="739"/>
+
+#### Human Interface Guidelines and iOSUIKit
+
+The equivalent collections are `humanDense`, `humanTall`, `iOSUIKitDense` and
+`iOSUIKitTall`.
+
+The adjustments here are minor and just to ensure proper rendering on all
+platforms.
+
+<img alt="Human Interface Guidelines Dense" src="images/human-dense.png" width="750" height="864"/>
+<img alt="Human Interface Guidelines Tall" src="images/human-tall.png" width="750" height="879"/>
+
+### Weight helpers
+
+The weight helpers for dense and tall scripts are different, as they render
+using different fonts and weights on each platform.
+
+On Android the Noto font is used to render the dense and tall scripts.
+
+#### notoCJKWeights, notoTallWeights
+
+Noto Sans CJK has seven values originally, but they are not shipped with Android
+for now, so we only have two available.
+
+For the tall scripts we have just regular and bold variants too.
+
+<img alt="Noto CJK and Tall Weights" src="images/noto-cjk-tall.png" width="480" height="285"/>
+
+#### systemDenseWeights
+
+Not all dense languages have every weight in iOS or on Android, we try to match
+it to the closer existing value, but ultimately every weight migh fall back to
+regular or bold depending on what's available.
+
+TODO Insert image on ios and on android
+
+#### systemTallWeights
+
+Noto Sans only has two weight values for tall scripts, so we fall back to the
+closest value.
+
+TODO Insert image on ios and on android
+
 ## F.A.Q.
 
 #### But I don't wanna use the Material Design or Human Interface Guidelines! Is there any reason why I should use this library?
@@ -339,7 +413,7 @@ It's not available by default on React Native Android yet. 😐
 
 #### Why are there less weights available for CJK(Chinese, Japanese, Korean) languages on Android than iOS?
 
-Android uses Noto Sans CJK (also known as Source Han Sans) to renders those
+Android uses Noto Sans CJK (also known as Source Han Sans) to render those
 languages, and
 [even though it has seven weights](https://material.io/guidelines/style/typography.html#typography-typeface),
 they're not shipped with Android. 😕
