@@ -372,9 +372,6 @@ define them and just supply the desired styles from the library! 🙂
 
 ## Roadmap
 
-* Support for
-  [dense and tall scripts](https://material.io/guidelines/style/typography.html#typography-line-height)
-  on the Material collection.
 * Type with [Flow](https://flow.org/)
 
 ## Versioning
