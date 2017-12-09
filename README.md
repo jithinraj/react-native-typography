@@ -317,7 +317,8 @@ platforms:
 Absolutely! The helpers are very convenient to build your own text styles as
 they work around
 [the quirks of working with text styles on React Native](https://medium.com/@martin_adamko/react-native-quirks-2fb1ae0bbf80),
-even if you want to specify your own sizes and weights, [check them out!](#customization-helpers)
+even if you want to specify your own sizes and weights,
+[check them out!](#customization-helpers)
 
 #### The Roboto typeface line heights are not 100% accurate to the Material Styles definition
 
@@ -330,11 +331,24 @@ accurate once it gets released.
 
 #### Kerning is not 100% accurate on the Display sizes for the Material styles on Android
 
-There's no support for letter spacing on React Native Android yet ☹️
+There's no support for letter spacing on React Native Android yet. ☹️
 
 #### Where is Roboto Black?
 
-It's not available by default on React Native yet 😐
+It's not available by default on React Native Android yet. 😐
+
+#### Why are there less weights available for CJK(Chinese, Japanese, Korean) languages on Android than iOS?
+
+Android uses Noto Sans CJK (also known as Source Han Sans) to renders those
+languages, and
+[even though it has seven weights](https://material.io/guidelines/style/typography.html#typography-typeface),
+they're not shipped with Android. 😕
+
+There are some issues tracking this already, hopefully they will be included in
+the future.
+
+* https://issuetracker.google.com/issues/37064674
+* https://issuetracker.google.com/issues/37106325
 
 #### I use styled-components/glamorous/etc. Can I use react-native-typography?
 
@@ -420,3 +434,4 @@ This project is licensed under the MIT License.
 * https://medium.com/@sauvik_dolui/handling-fonts-in-ios-development-a-simpler-way-32d360cdc1b6
 * https://readymag.com/arzamas/132908/6/
 * https://github.com/facebook/react-native/pull/14609
+* https://github.com/react-native-training/react-native-fonts
