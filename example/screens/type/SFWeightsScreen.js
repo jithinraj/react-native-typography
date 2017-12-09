@@ -58,47 +58,47 @@ const sanFranciscoWeightsScreen = ({ navigation }) => {
         {
           style: styles.thinWhite,
           text: "San Francisco Thin",
-          name: "thinWhite"
+          name: "thin"
         },
         {
           style: styles.ultraLightWhite,
           text: "San Francisco Ultralight",
-          name: "ultraLightWhite"
+          name: "ultraLight"
         },
         {
           style: styles.lightWhite,
           text: "San Francisco Light",
-          name: "lightWhite"
+          name: "light"
         },
         {
           style: styles.regularWhite,
           text: "San Francisco Regular",
-          name: "regularWhite"
+          name: "regular"
         },
         {
           style: styles.mediumWhite,
           text: "San Francisco Medium",
-          name: "mediumWhite"
+          name: "medium"
         },
         {
           style: styles.semiboldWhite,
           text: "San Francisco Semi-Bold",
-          name: "semiboldWhite"
+          name: "semibold"
         },
         {
           style: styles.boldWhite,
           text: "San Francisco Bold",
-          name: "boldWhite"
+          name: "bold"
         },
         {
           style: styles.heavyWhite,
           text: "San Francisco Heavy",
-          name: "heavyWhite"
+          name: "heavy"
         },
         {
           style: styles.blackWhite,
           text: "San Francisco Black",
-          name: "blackWhite"
+          name: "black"
         }
       ]}
     />

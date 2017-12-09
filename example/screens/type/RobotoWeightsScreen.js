@@ -48,37 +48,37 @@ const RobotoWeightsScreen = ({ navigation }) => {
         {
           style: styles.thinWhite,
           text: "Roboto Thin",
-          name: "thinWhite"
+          name: "thin"
         },
         {
           style: styles.lightWhite,
           text: "Roboto Light",
-          name: "lightWhite"
+          name: "light"
         },
         {
           style: styles.regularWhite,
           text: "Roboto Regular",
-          name: "regularWhite"
+          name: "regular"
         },
         {
           style: styles.mediumWhite,
           text: "Roboto Medium",
-          name: "mediumWhite"
+          name: "medium"
         },
         {
           style: styles.boldWhite,
           text: "Roboto Bold",
-          name: "boldWhite"
+          name: "bold"
         },
         {
           style: styles.condensedWhite,
           text: "Roboto Condensed",
-          name: "condensedWhite"
+          name: "condensed"
         },
         {
           style: styles.condensedBoldWhite,
           text: "Roboto Condensed Bold",
-          name: "condensedBoldWhite"
+          name: "condensedBold"
         }
       ]}
     />

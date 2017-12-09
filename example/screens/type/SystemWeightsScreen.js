@@ -38,27 +38,27 @@ const systemWeightsScreen = ({ navigation }) => {
         {
           style: styles.thinWhite,
           text: "System Thin",
-          name: "thinWhite"
+          name: "thin"
         },
         {
           style: styles.lightWhite,
           text: "System Light",
-          name: "lightWhite"
+          name: "light"
         },
         {
           style: styles.regularWhite,
           text: "System Regular",
-          name: "regularWhite"
+          name: "regular"
         },
         {
           style: styles.semiboldWhite,
           text: "System Semibold",
-          name: "semiboldWhite"
+          name: "semibold"
         },
         {
           style: styles.boldWhite,
           text: "System Bold",
-          name: "boldWhite"
+          name: "bold"
         }
       ]}
     />
